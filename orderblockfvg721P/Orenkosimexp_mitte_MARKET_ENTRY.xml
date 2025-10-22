@@ -421,21 +421,21 @@
       <AreLinesConfigurable>true</AreLinesConfigurable>
       <ArePlotsConfigurable>true</ArePlotsConfigurable>
       <BarsPeriodSerializable>
-        <BarsPeriodTypeSerialize>2023</BarsPeriodTypeSerialize>
+        <BarsPeriodTypeSerialize>3</BarsPeriodTypeSerialize>
         <BaseBarsPeriodType>Minute</BaseBarsPeriodType>
-        <BaseBarsPeriodValue>8</BaseBarsPeriodValue>
+        <BaseBarsPeriodValue>1</BaseBarsPeriodValue>
         <VolumetricDeltaType>BidAsk</VolumetricDeltaType>
         <MarketDataType>Last</MarketDataType>
         <PointAndFigurePriceType>Close</PointAndFigurePriceType>
         <ReversalType>Tick</ReversalType>
-        <Value>4</Value>
-        <Value2>16</Value2>
+        <Value>1</Value>
+        <Value2>1</Value2>
       </BarsPeriodSerializable>
       <BarsToLoad>0</BarsToLoad>
       <Calculate>OnEachTick</Calculate>
       <Displacement>0</Displacement>
       <DisplayInDataBox>true</DisplayInDataBox>
-      <From>2025-09-26T00:00:00</From>
+      <From>2025-10-03T00:00:00</From>
       <IsAutoScale>true</IsAutoScale>
       <Lines />
       <MaximumBarsLookBack>TwoHundredFiftySix</MaximumBarsLookBack>
@@ -444,7 +444,7 @@
       <Plots />
       <ScaleJustification>Right</ScaleJustification>
       <ShowTransparentPlotsInDataBox>false</ShowTransparentPlotsInDataBox>
-      <To>2025-10-02T00:00:00</To>
+      <To>2025-10-06T00:00:00</To>
       <IsDataSeriesRequired>true</IsDataSeriesRequired>
       <IsOverlay>true</IsOverlay>
       <SelectedValueSeries>0</SelectedValueSeries>
@@ -496,7 +496,7 @@
       <greenVIXg035>false</greenVIXg035>
       <DollarRisk>1</DollarRisk>
       <maxSize>1</maxSize>
-      <EntryOffset>1</EntryOffset>
+      <EntryOffset>8</EntryOffset>
       <breakEvenOffset>2</breakEvenOffset>
       <exitDonchianMid>true</exitDonchianMid>
       <dollarProfit>60</dollarProfit>
