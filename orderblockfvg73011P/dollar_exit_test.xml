@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StrategyTemplate>
-  <StrategyType>NinjaTrader.NinjaScript.Strategies.orderblockfvg721P</StrategyType>
+  <StrategyType>NinjaTrader.NinjaScript.Strategies.orderblockfvg73011P</StrategyType>
   <OptimizerType>NinjaTrader.NinjaScript.Optimizers.DefaultOptimizer</OptimizerType>
   <OptimizerParameters>
     <ArrayOfParameterWrapper xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
@@ -412,10 +412,75 @@
         <ParameterTypeSerializable>System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</ParameterTypeSerializable>
         <ValueSerializable>True</ValueSerializable>
       </Parameter>
+      <Parameter>
+        <EnumValuesSerializable />
+        <Increment>1</Increment>
+        <Max xsi:type="xsd:boolean">false</Max>
+        <Min xsi:type="xsd:boolean">false</Min>
+        <Name>activateGracefulExit</Name>
+        <ParameterTypeSerializable>System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</ParameterTypeSerializable>
+        <ValueSerializable>False</ValueSerializable>
+      </Parameter>
+      <Parameter>
+        <EnumValuesSerializable />
+        <Increment>1</Increment>
+        <Max xsi:type="xsd:double">0</Max>
+        <Min xsi:type="xsd:double">0</Min>
+        <Name>Percentage2</Name>
+        <ParameterTypeSerializable>System.Double, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</ParameterTypeSerializable>
+        <ValueSerializable>0</ValueSerializable>
+      </Parameter>
+      <Parameter>
+        <EnumValuesSerializable />
+        <Increment>1</Increment>
+        <Max xsi:type="xsd:double">0</Max>
+        <Min xsi:type="xsd:double">0</Min>
+        <Name>Percentage1</Name>
+        <ParameterTypeSerializable>System.Double, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</ParameterTypeSerializable>
+        <ValueSerializable>0</ValueSerializable>
+      </Parameter>
+      <Parameter>
+        <EnumValuesSerializable />
+        <Increment>1</Increment>
+        <Max xsi:type="xsd:boolean">false</Max>
+        <Min xsi:type="xsd:boolean">false</Min>
+        <Name>CutPositionToHalfP1</Name>
+        <ParameterTypeSerializable>System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</ParameterTypeSerializable>
+        <ValueSerializable>False</ValueSerializable>
+      </Parameter>
+      <Parameter>
+        <EnumValuesSerializable />
+        <Increment>1</Increment>
+        <Max xsi:type="xsd:boolean">false</Max>
+        <Min xsi:type="xsd:boolean">false</Min>
+        <Name>CutPositionToOneLotP1</Name>
+        <ParameterTypeSerializable>System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</ParameterTypeSerializable>
+        <ValueSerializable>False</ValueSerializable>
+      </Parameter>
+      <Parameter>
+        <EnumValuesSerializable />
+        <Increment>1</Increment>
+        <Max xsi:type="xsd:double">500</Max>
+        <Min xsi:type="xsd:double">500</Min>
+        <Name>DollarExit</Name>
+        <ParameterTypeSerializable>System.Double, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</ParameterTypeSerializable>
+        <ValueSerializable>500</ValueSerializable>
+      </Parameter>
+      <Parameter>
+        <EnumValuesSerializable>
+          <string>Flatten</string>
+        </EnumValuesSerializable>
+        <Increment>1</Increment>
+        <Max xsi:type="xsd:int">0</Max>
+        <Min xsi:type="xsd:int">0</Min>
+        <Name>DollarExitAction</Name>
+        <ParameterTypeSerializable>NinjaTrader.NinjaScript.Strategies.orderblockfvg73011P+DollarExitActionType, 074694a32c9044f3b10ab6c6e8f15787, Version=8.1.7.0, Culture=neutral, PublicKeyToken=null</ParameterTypeSerializable>
+        <ValueSerializable>Flatten</ValueSerializable>
+      </Parameter>
     </ArrayOfParameter>
   </OptimizationParameters>
   <Strategy>
-    <orderblockfvg721P xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <orderblockfvg73011P xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
       <IsVisible>true</IsVisible>
       <calculate2>OnEachTick</calculate2>
       <AreLinesConfigurable>true</AreLinesConfigurable>
@@ -435,16 +500,16 @@
       <Calculate>OnEachTick</Calculate>
       <Displacement>0</Displacement>
       <DisplayInDataBox>true</DisplayInDataBox>
-      <From>2025-09-26T00:00:00</From>
+      <From>2025-10-19T00:00:00</From>
       <IsAutoScale>true</IsAutoScale>
       <Lines />
       <MaximumBarsLookBack>TwoHundredFiftySix</MaximumBarsLookBack>
-      <Name />
+      <Name>orderblockfvg73011P</Name>
       <Panel>-1</Panel>
       <Plots />
       <ScaleJustification>Right</ScaleJustification>
       <ShowTransparentPlotsInDataBox>false</ShowTransparentPlotsInDataBox>
-      <To>2025-10-02T00:00:00</To>
+      <To>2025-10-22T00:00:00</To>
       <IsDataSeriesRequired>true</IsDataSeriesRequired>
       <IsOverlay>true</IsOverlay>
       <SelectedValueSeries>0</SelectedValueSeries>
@@ -469,7 +534,7 @@
       <EntryHandling>AllEntries</EntryHandling>
       <ExitOnSessionCloseSeconds>30</ExitOnSessionCloseSeconds>
       <IncludeCommission>false</IncludeCommission>
-      <InstrumentOrInstrumentList />
+      <InstrumentOrInstrumentList>MNQ DEC25</InstrumentOrInstrumentList>
       <IsAggregated>false</IsAggregated>
       <IsExitOnSessionCloseStrategy>true</IsExitOnSessionCloseStrategy>
       <IsFillLimitOnTouch>false</IsFillLimitOnTouch>
@@ -494,56 +559,63 @@
       <DrawOnPricePanel>false</DrawOnPricePanel>
       <ZOrder>-2147483648</ZOrder>
       <greenVIXg035>false</greenVIXg035>
-      <DollarRisk>1</DollarRisk>
+      <DollarRisk>50</DollarRisk>
       <maxSize>1</maxSize>
-      <EntryOffset>1</EntryOffset>
+      <EntryOffset>8</EntryOffset>
       <breakEvenOffset>2</breakEvenOffset>
-      <exitDonchianMid>true</exitDonchianMid>
-      <dollarProfit>60</dollarProfit>
-      <riskReward>0.5</riskReward>
+      <exitDonchianMid>false</exitDonchianMid>
+      <dollarProfit>40</dollarProfit>
+      <riskReward>1</riskReward>
       <addLots>2</addLots>
       <DonchianPeriod>34</DonchianPeriod>
       <ignoreNewHighLow>true</ignoreNewHighLow>
       <exitOnNewHighLow>false</exitOnNewHighLow>
       <exitOnDonchian>false</exitOnDonchian>
-      <newPositionWait>0</newPositionWait>
+      <newPositionWait>2</newPositionWait>
       <donchianOffset>0</donchianOffset>
-      <lossThreshold>1750</lossThreshold>
-      <stopDonchianMID>true</stopDonchianMID>
-      <maxEntriesPerDirection>6</maxEntriesPerDirection>
+      <lossThreshold>2000</lossThreshold>
+      <stopDonchianMID>false</stopDonchianMID>
+      <maxEntriesPerDirection>8</maxEntriesPerDirection>
       <SetAutoOnEnabled>false</SetAutoOnEnabled>
       <TradeBestRTH>false</TradeBestRTH>
-      <stopDonchianEnd>false</stopDonchianEnd>
-      <profitOffset>3</profitOffset>
-      <enableSafeFlatten>true</enableSafeFlatten>
+      <stopDonchianEnd>true</stopDonchianEnd>
+      <profitOffset>0</profitOffset>
+      <enableSafeFlatten>false</enableSafeFlatten>
       <TP1>false</TP1>
-      <TP1Start>2025-09-03T05:00:00</TP1Start>
-      <TP1End>2025-09-03T07:00:00</TP1End>
+      <TP1Start>2025-10-22T05:00:00</TP1Start>
+      <TP1End>2025-10-22T07:00:00</TP1End>
       <TP2>false</TP2>
-      <TP2Start>2025-09-03T08:30:00</TP2Start>
-      <TP2End>2025-09-03T10:30:00</TP2End>
+      <TP2Start>2025-10-22T08:30:00</TP2Start>
+      <TP2End>2025-10-22T10:30:00</TP2End>
       <TP3>false</TP3>
-      <TP3Start>2025-09-03T12:00:00</TP3Start>
-      <TP3End>2025-09-03T14:30:00</TP3End>
+      <TP3Start>2025-10-22T12:00:00</TP3Start>
+      <TP3End>2025-10-22T14:30:00</TP3End>
       <TP4>false</TP4>
-      <TP4Start>2025-09-03T18:00:00</TP4Start>
-      <TP4End>2025-09-03T22:00:00</TP4End>
+      <TP4Start>2025-10-22T18:00:00</TP4Start>
+      <TP4End>2025-10-22T22:00:00</TP4End>
       <donchianWidth>2</donchianWidth>
       <avoidSlippage>true</avoidSlippage>
       <useADX>false</useADX>
       <useVIX>false</useVIX>
-      <useSMA>true</useSMA>
-      <smaPeriod>1575</smaPeriod>
+      <useSMA>false</useSMA>
+      <smaPeriod>144</smaPeriod>
       <useKijun>false</useKijun>
-      <useSMA5minute>true</useSMA5minute>
+      <useSMA5minute>false</useSMA5minute>
       <sma5Period>21</sma5Period>
       <useKijun100T>false</useKijun100T>
       <inactivityBars>0</inactivityBars>
-      <maxLossPerTrade>0</maxLossPerTrade>
-      <dailyGoal>1000</dailyGoal>
-      <getMeOut>0</getMeOut>
+      <maxLossPerTrade>300</maxLossPerTrade>
+      <dailyGoal>0</dailyGoal>
+      <getMeOut>3</getMeOut>
       <maxPosSize>40</maxPosSize>
-      <tradeFVG>true</tradeFVG>
-    </orderblockfvg721P>
+      <tradeFVG>false</tradeFVG>
+      <activateGracefulExit>true</activateGracefulExit>
+      <Percentage2>0</Percentage2>
+      <Percentage1>50</Percentage1>
+      <CutPositionToHalfP1>true</CutPositionToHalfP1>
+      <CutPositionToOneLotP1>false</CutPositionToOneLotP1>
+      <DollarExit>500</DollarExit>
+      <DollarExitAction>Flatten</DollarExitAction>
+    </orderblockfvg73011P>
   </Strategy>
 </StrategyTemplate>
