@@ -1,6 +1,6 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <StrategyTemplate>
-  <StrategyType>NinjaTrader.NinjaScript.Strategies.orderblockfvg721P</StrategyType>
+  <StrategyType>NinjaTrader.NinjaScript.Strategies.orderblockfvg74001P</StrategyType>
   <OptimizerType>NinjaTrader.NinjaScript.Optimizers.DefaultOptimizer</OptimizerType>
   <OptimizerParameters>
     <ArrayOfParameterWrapper xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
@@ -403,19 +403,10 @@
         <ParameterTypeSerializable>System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</ParameterTypeSerializable>
         <ValueSerializable>40</ValueSerializable>
       </Parameter>
-      <Parameter>
-        <EnumValuesSerializable />
-        <Increment>1</Increment>
-        <Max xsi:type="xsd:boolean">true</Max>
-        <Min xsi:type="xsd:boolean">true</Min>
-        <Name>tradeFVG</Name>
-        <ParameterTypeSerializable>System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</ParameterTypeSerializable>
-        <ValueSerializable>True</ValueSerializable>
-      </Parameter>
     </ArrayOfParameter>
   </OptimizationParameters>
   <Strategy>
-    <orderblockfvg721P xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <orderblockfvg74001P xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
       <IsVisible>true</IsVisible>
       <calculate2>OnEachTick</calculate2>
       <AreLinesConfigurable>true</AreLinesConfigurable>
@@ -435,16 +426,16 @@
       <Calculate>OnEachTick</Calculate>
       <Displacement>0</Displacement>
       <DisplayInDataBox>true</DisplayInDataBox>
-      <From>2025-09-26T00:00:00</From>
+      <From>2099-12-01T00:00:00</From>
       <IsAutoScale>true</IsAutoScale>
       <Lines />
       <MaximumBarsLookBack>TwoHundredFiftySix</MaximumBarsLookBack>
-      <Name />
+      <Name>orderblockfvg74001P</Name>
       <Panel>-1</Panel>
       <Plots />
       <ScaleJustification>Right</ScaleJustification>
       <ShowTransparentPlotsInDataBox>false</ShowTransparentPlotsInDataBox>
-      <To>2025-10-02T00:00:00</To>
+      <To>1800-01-01T00:00:00</To>
       <IsDataSeriesRequired>true</IsDataSeriesRequired>
       <IsOverlay>true</IsOverlay>
       <SelectedValueSeries>0</SelectedValueSeries>
@@ -469,7 +460,6 @@
       <EntryHandling>AllEntries</EntryHandling>
       <ExitOnSessionCloseSeconds>30</ExitOnSessionCloseSeconds>
       <IncludeCommission>false</IncludeCommission>
-      <InstrumentOrInstrumentList />
       <IsAggregated>false</IsAggregated>
       <IsExitOnSessionCloseStrategy>true</IsExitOnSessionCloseStrategy>
       <IsFillLimitOnTouch>false</IsFillLimitOnTouch>
@@ -508,7 +498,7 @@
       <exitOnDonchian>false</exitOnDonchian>
       <newPositionWait>0</newPositionWait>
       <donchianOffset>0</donchianOffset>
-      <lossThreshold>1750</lossThreshold>
+      <lossThreshold>2000</lossThreshold>
       <stopDonchianMID>true</stopDonchianMID>
       <maxEntriesPerDirection>6</maxEntriesPerDirection>
       <SetAutoOnEnabled>false</SetAutoOnEnabled>
@@ -517,17 +507,17 @@
       <profitOffset>3</profitOffset>
       <enableSafeFlatten>true</enableSafeFlatten>
       <TP1>false</TP1>
-      <TP1Start>2025-09-03T05:00:00</TP1Start>
-      <TP1End>2025-09-03T07:00:00</TP1End>
+      <TP1Start>2025-08-27T05:00:00</TP1Start>
+      <TP1End>2025-08-27T07:00:00</TP1End>
       <TP2>false</TP2>
-      <TP2Start>2025-09-03T08:30:00</TP2Start>
-      <TP2End>2025-09-03T10:30:00</TP2End>
+      <TP2Start>2025-08-27T08:30:00</TP2Start>
+      <TP2End>2025-08-27T10:30:00</TP2End>
       <TP3>false</TP3>
-      <TP3Start>2025-09-03T12:00:00</TP3Start>
-      <TP3End>2025-09-03T14:30:00</TP3End>
+      <TP3Start>2025-08-27T12:00:00</TP3Start>
+      <TP3End>2025-08-27T14:30:00</TP3End>
       <TP4>false</TP4>
-      <TP4Start>2025-09-03T18:00:00</TP4Start>
-      <TP4End>2025-09-03T22:00:00</TP4End>
+      <TP4Start>2025-08-27T18:00:00</TP4Start>
+      <TP4End>2025-08-27T22:00:00</TP4End>
       <donchianWidth>2</donchianWidth>
       <avoidSlippage>true</avoidSlippage>
       <useADX>false</useADX>
@@ -540,10 +530,9 @@
       <useKijun100T>false</useKijun100T>
       <inactivityBars>0</inactivityBars>
       <maxLossPerTrade>0</maxLossPerTrade>
-      <dailyGoal>1000</dailyGoal>
-      <getMeOut>0</getMeOut>
+      <dailyGoal>0</dailyGoal>
+      <getMeOut>1</getMeOut>
       <maxPosSize>40</maxPosSize>
-      <tradeFVG>true</tradeFVG>
-    </orderblockfvg721P>
+    </orderblockfvg74001P>
   </Strategy>
 </StrategyTemplate>

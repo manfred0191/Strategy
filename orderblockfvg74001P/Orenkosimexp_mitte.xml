@@ -1,6 +1,6 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <StrategyTemplate>
-  <StrategyType>NinjaTrader.NinjaScript.Strategies.orderblockfvg721P</StrategyType>
+  <StrategyType>NinjaTrader.NinjaScript.Strategies.orderblockfvg74001P</StrategyType>
   <OptimizerType>NinjaTrader.NinjaScript.Optimizers.DefaultOptimizer</OptimizerType>
   <OptimizerParameters>
     <ArrayOfParameterWrapper xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
@@ -415,7 +415,7 @@
     </ArrayOfParameter>
   </OptimizationParameters>
   <Strategy>
-    <orderblockfvg721P xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <orderblockfvg74001P xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
       <IsVisible>true</IsVisible>
       <calculate2>OnEachTick</calculate2>
       <AreLinesConfigurable>true</AreLinesConfigurable>
@@ -544,6 +544,6 @@
       <getMeOut>0</getMeOut>
       <maxPosSize>40</maxPosSize>
       <tradeFVG>true</tradeFVG>
-    </orderblockfvg721P>
+    </orderblockfvg74001P>
   </Strategy>
 </StrategyTemplate>
