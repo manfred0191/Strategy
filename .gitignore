@@ -1,0 +1,14 @@
+# NinjaTrader bin/Custom auf keinen Fall ins Repo
+/bin/
+/bin/Custom/
+/bin/Custom/**
+
+# Windows-typische Dateien ignorieren
+Thumbs.db
+Desktop.ini
+
+# Git-Konflikt- und Backup-Dateien ignorieren
+*.orig
+*.conflicted.*
+*.bak
+*.tmp
