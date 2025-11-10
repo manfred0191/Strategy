@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StrategyTemplate>
+  <StrategyType>NinjaTrader.NinjaScript.Strategies.orderblockfvg472</StrategyType>
+  <OptimizerType>NinjaTrader.NinjaScript.Optimizers.DefaultOptimizer</OptimizerType>
+  <OptimizerParameters>
+    <ArrayOfParameterWrapper xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <ParameterWrapper>
+        <DisplayName>IsStrategyGenerator</DisplayName>
+        <Name>IsStrategyGenerator</Name>
+        <Value xsi:type="xsd:boolean">false</Value>
+      </ParameterWrapper>
+      <ParameterWrapper>
+        <DisplayName>Keep best # results</DisplayName>
+        <Name>KeepBestResults</Name>
+        <Value xsi:type="xsd:int">10</Value>
+      </ParameterWrapper>
+      <ParameterWrapper>
+        <DisplayName>LogTypeName</DisplayName>
+        <Name>LogTypeName</Name>
+        <Value xsi:type="xsd:string">Optimizer</Value>
+      </ParameterWrapper>
+      <ParameterWrapper>
+        <DisplayName>Visible</DisplayName>
+        <Name>IsVisible</Name>
+        <Value xsi:type="xsd:boolean">true</Value>
+      </ParameterWrapper>
+    </ArrayOfParameterWrapper>
+  </OptimizerParameters>
+  <OptimizationFitness>NinjaTrader.NinjaScript.OptimizationFitnesses.MaxProfitFactor</OptimizationFitness>
+  <OptimizationParameters>
+    <ArrayOfParameter xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <Parameter>
+        <EnumValuesSerializable />
+        <Increment>1</Increment>
+        <Max xsi:type="xsd:double">50</Max>
+        <Min xsi:type="xsd:double">50</Min>
+        <Name>DollarRisk</Name>
+        <ParameterTypeSerializable>System.Double, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</ParameterTypeSerializable>
+        <ValueSerializable>50</ValueSerializable>
+      </Parameter>
+      <Parameter>
+        <EnumValuesSerializable />
+        <Increment>1</Increment>
+        <Max xsi:type="xsd:int">1</Max>
+        <Min xsi:type="xsd:int">1</Min>
+        <Name>maxSize</Name>
+        <ParameterTypeSerializable>System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</ParameterTypeSerializable>
+        <ValueSerializable>1</ValueSerializable>
+      </Parameter>
+      <Parameter>
+        <EnumValuesSerializable />
+        <Increment>1</Increment>
+        <Max xsi:type="xsd:int">1</Max>
+        <Min xsi:type="xsd:int">1</Min>
+        <Name>EntryOffset</Name>
+        <ParameterTypeSerializable>System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</ParameterTypeSerializable>
+        <ValueSerializable>1</ValueSerializable>
+      </Parameter>
+      <Parameter>
+        <EnumValuesSerializable />
+        <Increment>1</Increment>
+        <Max xsi:type="xsd:int">2</Max>
+        <Min xsi:type="xsd:int">2</Min>
+        <Name>breakEvenOffset</Name>
+        <ParameterTypeSerializable>System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</ParameterTypeSerializable>
+        <ValueSerializable>2</ValueSerializable>
+      </Parameter>
+      <Parameter>
+        <EnumValuesSerializable />
+        <Increment>1</Increment>
+        <Max xsi:type="xsd:boolean">false</Max>
+        <Min xsi:type="xsd:boolean">false</Min>
+        <Name>exitDonchianMid</Name>
+        <ParameterTypeSerializable>System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</ParameterTypeSerializable>
+        <ValueSerializable>False</ValueSerializable>
+      </Parameter>
+      <Parameter>
+        <EnumValuesSerializable />
+        <Increment>1</Increment>
+        <Max xsi:type="xsd:double">75</Max>
+        <Min xsi:type="xsd:double">75</Min>
+        <Name>dollarProfit</Name>
+        <ParameterTypeSerializable>System.Double, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</ParameterTypeSerializable>
+        <ValueSerializable>75</ValueSerializable>
+      </Parameter>
+      <Parameter>
+        <EnumValuesSerializable />
+        <Increment>1</Increment>
+        <Max xsi:type="xsd:double">1.5</Max>
+        <Min xsi:type="xsd:double">1.5</Min>
+        <Name>riskReward</Name>
+        <ParameterTypeSerializable>System.Double, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</ParameterTypeSerializable>
+        <ValueSerializable>1.5</ValueSerializable>
+      </Parameter>
+      <Parameter>
+        <EnumValuesSerializable />
+        <Increment>1</Increment>
+        <Max xsi:type="xsd:int">2</Max>
+        <Min xsi:type="xsd:int">2</Min>
+        <Name>addLots</Name>
+        <ParameterTypeSerializable>System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</ParameterTypeSerializable>
+        <ValueSerializable>2</ValueSerializable>
+      </Parameter>
+      <Parameter>
+        <EnumValuesSerializable />
+        <Increment>1</Increment>
+        <Max xsi:type="xsd:int">8</Max>
+        <Min xsi:type="xsd:int">8</Min>
+        <Name>DonchianPeriod</Name>
+        <ParameterTypeSerializable>System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</ParameterTypeSerializable>
+        <ValueSerializable>8</ValueSerializable>
+      </Parameter>
+      <Parameter>
+        <EnumValuesSerializable />
+        <Increment>1</Increment>
+        <Max xsi:type="xsd:boolean">true</Max>
+        <Min xsi:type="xsd:boolean">true</Min>
+        <Name>ignoreNewHighLow</Name>
+        <ParameterTypeSerializable>System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</ParameterTypeSerializable>
+        <ValueSerializable>True</ValueSerializable>
+      </Parameter>
+      <Parameter>
+        <EnumValuesSerializable />
+        <Increment>1</Increment>
+        <Max xsi:type="xsd:boolean">false</Max>
+        <Min xsi:type="xsd:boolean">false</Min>
+        <Name>exitOnNewHighLow</Name>
+        <ParameterTypeSerializable>System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</ParameterTypeSerializable>
+        <ValueSerializable>False</ValueSerializable>
+      </Parameter>
+      <Parameter>
+        <EnumValuesSerializable />
+        <Increment>1</Increment>
+        <Max xsi:type="xsd:boolean">false</Max>
+        <Min xsi:type="xsd:boolean">false</Min>
+        <Name>exitOnDonchian</Name>
+        <ParameterTypeSerializable>System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</ParameterTypeSerializable>
+        <ValueSerializable>False</ValueSerializable>
+      </Parameter>
+      <Parameter>
+        <EnumValuesSerializable />
+        <Increment>1</Increment>
+        <Max xsi:type="xsd:int">10</Max>
+        <Min xsi:type="xsd:int">10</Min>
+        <Name>newPositionWait</Name>
+        <ParameterTypeSerializable>System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</ParameterTypeSerializable>
+        <ValueSerializable>10</ValueSerializable>
+      </Parameter>
+      <Parameter>
+        <EnumValuesSerializable />
+        <Increment>1</Increment>
+        <Max xsi:type="xsd:int">0</Max>
+        <Min xsi:type="xsd:int">0</Min>
+        <Name>donchianOffset</Name>
+        <ParameterTypeSerializable>System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</ParameterTypeSerializable>
+        <ValueSerializable>0</ValueSerializable>
+      </Parameter>
+      <Parameter>
+        <EnumValuesSerializable />
+        <Increment>1</Increment>
+        <Max xsi:type="xsd:double">2000</Max>
+        <Min xsi:type="xsd:double">2000</Min>
+        <Name>lossThreshold</Name>
+        <ParameterTypeSerializable>System.Double, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</ParameterTypeSerializable>
+        <ValueSerializable>2000</ValueSerializable>
+      </Parameter>
+      <Parameter>
+        <EnumValuesSerializable />
+        <Increment>1</Increment>
+        <Max xsi:type="xsd:boolean">false</Max>
+        <Min xsi:type="xsd:boolean">false</Min>
+        <Name>stopDonchianMID</Name>
+        <ParameterTypeSerializable>System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</ParameterTypeSerializable>
+        <ValueSerializable>False</ValueSerializable>
+      </Parameter>
+      <Parameter>
+        <EnumValuesSerializable />
+        <Increment>1</Increment>
+        <Max xsi:type="xsd:int">8</Max>
+        <Min xsi:type="xsd:int">8</Min>
+        <Name>maxEntriesPerDirection</Name>
+        <ParameterTypeSerializable>System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</ParameterTypeSerializable>
+        <ValueSerializable>8</ValueSerializable>
+      </Parameter>
+      <Parameter>
+        <EnumValuesSerializable />
+        <Increment>1</Increment>
+        <Max xsi:type="xsd:boolean">false</Max>
+        <Min xsi:type="xsd:boolean">false</Min>
+        <Name>SetAutoOnEnabled</Name>
+        <ParameterTypeSerializable>System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</ParameterTypeSerializable>
+        <ValueSerializable>False</ValueSerializable>
+      </Parameter>
+      <Parameter>
+        <EnumValuesSerializable />
+        <Increment>1</Increment>
+        <Max xsi:type="xsd:boolean">false</Max>
+        <Min xsi:type="xsd:boolean">false</Min>
+        <Name>TradeBestRTH</Name>
+        <ParameterTypeSerializable>System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</ParameterTypeSerializable>
+        <ValueSerializable>False</ValueSerializable>
+      </Parameter>
+      <Parameter>
+        <EnumValuesSerializable />
+        <Increment>1</Increment>
+        <Max xsi:type="xsd:boolean">true</Max>
+        <Min xsi:type="xsd:boolean">true</Min>
+        <Name>stopDonchianEnd</Name>
+        <ParameterTypeSerializable>System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</ParameterTypeSerializable>
+        <ValueSerializable>True</ValueSerializable>
+      </Parameter>
+      <Parameter>
+        <EnumValuesSerializable />
+        <Increment>1</Increment>
+        <Max xsi:type="xsd:double">0.5</Max>
+        <Min xsi:type="xsd:double">0.5</Min>
+        <Name>profitOffset</Name>
+        <ParameterTypeSerializable>System.Double, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</ParameterTypeSerializable>
+        <ValueSerializable>0.5</ValueSerializable>
+      </Parameter>
+    </ArrayOfParameter>
+  </OptimizationParameters>
+  <Strategy>
+    <orderblockfvg472 xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <IsVisible>true</IsVisible>
+      <AreLinesConfigurable>true</AreLinesConfigurable>
+      <ArePlotsConfigurable>true</ArePlotsConfigurable>
+      <BarsPeriodSerializable>
+        <BarsPeriodTypeSerialize>3</BarsPeriodTypeSerialize>
+        <BaseBarsPeriodType>Minute</BaseBarsPeriodType>
+        <BaseBarsPeriodValue>1</BaseBarsPeriodValue>
+        <VolumetricDeltaType>BidAsk</VolumetricDeltaType>
+        <MarketDataType>Last</MarketDataType>
+        <PointAndFigurePriceType>Close</PointAndFigurePriceType>
+        <ReversalType>Tick</ReversalType>
+        <Value>30</Value>
+        <Value2>1</Value2>
+      </BarsPeriodSerializable>
+      <BarsToLoad>0</BarsToLoad>
+      <DisplayInDataBox>true</DisplayInDataBox>
+      <From>2025-03-21T00:00:00</From>
+      <Panel>-1</Panel>
+      <ScaleJustification>Right</ScaleJustification>
+      <ShowTransparentPlotsInDataBox>false</ShowTransparentPlotsInDataBox>
+      <To>2025-03-26T00:00:00</To>
+      <Calculate>OnEachTick</Calculate>
+      <Displacement>0</Displacement>
+      <IsAutoScale>true</IsAutoScale>
+      <IsDataSeriesRequired>true</IsDataSeriesRequired>
+      <IsOverlay>true</IsOverlay>
+      <Lines />
+      <MaximumBarsLookBack>TwoHundredFiftySix</MaximumBarsLookBack>
+      <Name>orderblockfvg472</Name>
+      <Plots />
+      <SelectedValueSeries>0</SelectedValueSeries>
+      <BarsPeriodParameter>
+        <Increment>1</Increment>
+        <Max xsi:type="xsd:int">0</Max>
+        <Min xsi:type="xsd:int">0</Min>
+        <Name />
+        <ParameterTypeSerializable>System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</ParameterTypeSerializable>
+        <ValueSerializable>0</ValueSerializable>
+      </BarsPeriodParameter>
+      <BarsRequiredToTrade>2</BarsRequiredToTrade>
+      <Category>NinjaScript</Category>
+      <ConnectionLossHandling>Recalculate</ConnectionLossHandling>
+      <DaysToLoad>3</DaysToLoad>
+      <DefaultQuantity>1</DefaultQuantity>
+      <DisconnectDelaySeconds>10</DisconnectDelaySeconds>
+      <EntriesPerDirection>8</EntriesPerDirection>
+      <EntryHandling>AllEntries</EntryHandling>
+      <ExitOnSessionCloseSeconds>30</ExitOnSessionCloseSeconds>
+      <IncludeCommission>false</IncludeCommission>
+      <InstrumentOrInstrumentList />
+      <IsAggregated>false</IsAggregated>
+      <IsExitOnSessionCloseStrategy>true</IsExitOnSessionCloseStrategy>
+      <IsFillLimitOnTouch>false</IsFillLimitOnTouch>
+      <IsOptimizeDataSeries>false</IsOptimizeDataSeries>
+      <IsStableSession>true</IsStableSession>
+      <IsTickReplay>false</IsTickReplay>
+      <IsTradingHoursBreakLineVisible>true</IsTradingHoursBreakLineVisible>
+      <IsWaitUntilFlat>false</IsWaitUntilFlat>
+      <NumberRestartAttempts>4</NumberRestartAttempts>
+      <OptimizationPeriod>10</OptimizationPeriod>
+      <OrderFillResolution>Standard</OrderFillResolution>
+      <OrderFillResolutionType>Second</OrderFillResolutionType>
+      <OrderFillResolutionValue>1</OrderFillResolutionValue>
+      <RestartsWithinMinutes>5</RestartsWithinMinutes>
+      <SetOrderQuantity>Strategy</SetOrderQuantity>
+      <Slippage>0</Slippage>
+      <StartBehavior>WaitUntilFlat</StartBehavior>
+      <StopTargetHandling>PerEntryExecution</StopTargetHandling>
+      <SupportsOptimizationGraph>true</SupportsOptimizationGraph>
+      <TestPeriod>28</TestPeriod>
+      <TradingHoursSerializable />
+      <Gtd>1800-01-01T00:00:00</Gtd>
+      <Template />
+      <TimeInForce>Gtc</TimeInForce>
+      <DrawOnPricePanel>false</DrawOnPricePanel>
+      <ZOrder>-2147483648</ZOrder>
+      <DollarRisk>500</DollarRisk>
+      <maxSize>1</maxSize>
+      <EntryOffset>1</EntryOffset>
+      <breakEvenOffset>2</breakEvenOffset>
+      <exitDonchianMid>true</exitDonchianMid>
+      <dollarProfit>750</dollarProfit>
+      <riskReward>1.5</riskReward>
+      <addLots>4</addLots>
+      <DonchianPeriod>60</DonchianPeriod>
+      <ignoreNewHighLow>true</ignoreNewHighLow>
+      <exitOnNewHighLow>false</exitOnNewHighLow>
+      <exitOnDonchian>false</exitOnDonchian>
+      <newPositionWait>25</newPositionWait>
+      <donchianOffset>0</donchianOffset>
+      <lossThreshold>2000</lossThreshold>
+      <stopDonchianMID>true</stopDonchianMID>
+      <maxEntriesPerDirection>8</maxEntriesPerDirection>
+      <SetAutoOnEnabled>true</SetAutoOnEnabled>
+      <TradeBestRTH>false</TradeBestRTH>
+      <stopDonchianEnd>true</stopDonchianEnd>
+      <profitOffset>0.5</profitOffset>
+    </orderblockfvg472>
+  </Strategy>
+</StrategyTemplate>
