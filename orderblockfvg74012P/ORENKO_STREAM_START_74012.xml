@@ -1,0 +1,199 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<StrategyTemplate>
+  <StrategyType>NinjaTrader.NinjaScript.Strategies.orderblockfvg74012P</StrategyType>
+  <OptimizerType>NinjaTrader.NinjaScript.Optimizers.DefaultOptimizer</OptimizerType>
+  <OptimizerParameters>
+    <ArrayOfParameterWrapper xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <ParameterWrapper>
+        <DisplayName>IsStrategyGenerator</DisplayName>
+        <Name>IsStrategyGenerator</Name>
+        <Value xsi:type="xsd:boolean">false</Value>
+      </ParameterWrapper>
+      <ParameterWrapper>
+        <DisplayName>Keep best # results</DisplayName>
+        <Name>KeepBestResults</Name>
+        <Value xsi:type="xsd:int">10</Value>
+      </ParameterWrapper>
+      <ParameterWrapper>
+        <DisplayName>LogTypeName</DisplayName>
+        <Name>LogTypeName</Name>
+        <Value xsi:type="xsd:string">Optimizer</Value>
+      </ParameterWrapper>
+      <ParameterWrapper>
+        <DisplayName>Visible</DisplayName>
+        <Name>IsVisible</Name>
+        <Value xsi:type="xsd:boolean">true</Value>
+      </ParameterWrapper>
+      <ParameterWrapper>
+        <DisplayName>Name</DisplayName>
+        <Name>Name</Name>
+        <Value xsi:type="xsd:string">Default</Value>
+      </ParameterWrapper>
+    </ArrayOfParameterWrapper>
+  </OptimizerParameters>
+  <OptimizationFitness>NinjaTrader.NinjaScript.OptimizationFitnesses.MaxProfitFactor</OptimizationFitness>
+  <OptimizationParameters>
+    <ArrayOfParameter xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+  </OptimizationParameters>
+  <Strategy>
+    <orderblockfvg74012P xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <IsVisible>true</IsVisible>
+      <calculate2>OnEachTick</calculate2>
+      <AreLinesConfigurable>true</AreLinesConfigurable>
+      <ArePlotsConfigurable>true</ArePlotsConfigurable>
+      <BarsPeriodSerializable>
+        <BarsPeriodTypeSerialize>2023</BarsPeriodTypeSerialize>
+        <BaseBarsPeriodType>Minute</BaseBarsPeriodType>
+        <BaseBarsPeriodValue>8</BaseBarsPeriodValue>
+        <VolumetricDeltaType>BidAsk</VolumetricDeltaType>
+        <MarketDataType>Last</MarketDataType>
+        <PointAndFigurePriceType>Close</PointAndFigurePriceType>
+        <ReversalType>Tick</ReversalType>
+        <Value>4</Value>
+        <Value2>16</Value2>
+      </BarsPeriodSerializable>
+      <BarsToLoad>0</BarsToLoad>
+      <Calculate>OnEachTick</Calculate>
+      <Displacement>0</Displacement>
+      <DisplayInDataBox>true</DisplayInDataBox>
+      <From>2025-11-07T00:00:00</From>
+      <IsAutoScale>true</IsAutoScale>
+      <Lines />
+      <MaximumBarsLookBack>TwoHundredFiftySix</MaximumBarsLookBack>
+      <Name />
+      <Panel>-1</Panel>
+      <Plots />
+      <ScaleJustification>Right</ScaleJustification>
+      <ShowTransparentPlotsInDataBox>false</ShowTransparentPlotsInDataBox>
+      <To>2025-11-10T00:00:00</To>
+      <IsDataSeriesRequired>true</IsDataSeriesRequired>
+      <IsOverlay>true</IsOverlay>
+      <SelectedValueSeries>0</SelectedValueSeries>
+      <Gtd>1800-01-01T00:00:00</Gtd>
+      <Template />
+      <TimeInForce>Gtc</TimeInForce>
+      <BarsPeriodParameter>
+        <Increment>1</Increment>
+        <Max xsi:type="xsd:int">0</Max>
+        <Min xsi:type="xsd:int">0</Min>
+        <Name />
+        <ParameterTypeSerializable>System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</ParameterTypeSerializable>
+        <ValueSerializable>0</ValueSerializable>
+      </BarsPeriodParameter>
+      <BarsRequiredToTrade>20</BarsRequiredToTrade>
+      <Category>NinjaScript</Category>
+      <ConnectionLossHandling>Recalculate</ConnectionLossHandling>
+      <DaysToLoad>5</DaysToLoad>
+      <DefaultQuantity>1</DefaultQuantity>
+      <DisconnectDelaySeconds>10</DisconnectDelaySeconds>
+      <EntriesPerDirection>8</EntriesPerDirection>
+      <EntryHandling>AllEntries</EntryHandling>
+      <ExitOnSessionCloseSeconds>30</ExitOnSessionCloseSeconds>
+      <IncludeCommission>false</IncludeCommission>
+      <InstrumentOrInstrumentList />
+      <IsAggregated>false</IsAggregated>
+      <IsExitOnSessionCloseStrategy>true</IsExitOnSessionCloseStrategy>
+      <IsFillLimitOnTouch>false</IsFillLimitOnTouch>
+      <IsOptimizeDataSeries>false</IsOptimizeDataSeries>
+      <IsStableSession>true</IsStableSession>
+      <IsTickReplay>false</IsTickReplay>
+      <IsTradingHoursBreakLineVisible>true</IsTradingHoursBreakLineVisible>
+      <IsWaitUntilFlat>false</IsWaitUntilFlat>
+      <NumberRestartAttempts>4</NumberRestartAttempts>
+      <OptimizationPeriod>10</OptimizationPeriod>
+      <OrderFillResolution>Standard</OrderFillResolution>
+      <OrderFillResolutionType>Tick</OrderFillResolutionType>
+      <OrderFillResolutionValue>1</OrderFillResolutionValue>
+      <RestartsWithinMinutes>5</RestartsWithinMinutes>
+      <SetOrderQuantity>Strategy</SetOrderQuantity>
+      <Slippage>0</Slippage>
+      <StartBehavior>WaitUntilFlat</StartBehavior>
+      <StopTargetHandling>PerEntryExecution</StopTargetHandling>
+      <SupportsOptimizationGraph>true</SupportsOptimizationGraph>
+      <TestPeriod>28</TestPeriod>
+      <TradingHoursSerializable />
+      <DrawOnPricePanel>false</DrawOnPricePanel>
+      <ZOrder>-2147483648</ZOrder>
+      <greenVIXg035>false</greenVIXg035>
+      <DollarRisk>50</DollarRisk>
+      <maxSize>1</maxSize>
+      <EntryOffset>1</EntryOffset>
+      <breakEvenOffset>2</breakEvenOffset>
+      <exitDonchianMid>true</exitDonchianMid>
+      <dollarProfit>75</dollarProfit>
+      <riskReward>1.5</riskReward>
+      <addLots>2</addLots>
+      <DonchianPeriod>34</DonchianPeriod>
+      <UseDynamicDonchianPeriod>true</UseDynamicDonchianPeriod>
+      <DonchianATRMultiplier>1.5</DonchianATRMultiplier>
+      <DonchianMinPeriod>20</DonchianMinPeriod>
+      <DonchianMaxPeriod>120</DonchianMaxPeriod>
+      <UseAntiReversalMode>true</UseAntiReversalMode>
+      <AntiReversalThreshold>2</AntiReversalThreshold>
+      <MomentumLookback>10</MomentumLookback>
+      <IncludeWaveConsistency>true</IncludeWaveConsistency>
+      <ignoreNewHighLow>true</ignoreNewHighLow>
+      <exitOnNewHighLow>false</exitOnNewHighLow>
+      <exitOnDonchian>false</exitOnDonchian>
+      <newPositionWait>25</newPositionWait>
+      <donchianOffset>0</donchianOffset>
+      <lossThreshold>2000</lossThreshold>
+      <stopDonchianMID>true</stopDonchianMID>
+      <maxEntriesPerDirection>6</maxEntriesPerDirection>
+      <SetAutoOnEnabled>false</SetAutoOnEnabled>
+      <TradeBestRTH>false</TradeBestRTH>
+      <stopDonchianEnd>false</stopDonchianEnd>
+      <profitOffset>0</profitOffset>
+      <enableSafeFlatten>true</enableSafeFlatten>
+      <TP1>false</TP1>
+      <TP1Start>2025-11-10T05:00:00</TP1Start>
+      <TP1End>2025-11-10T07:00:00</TP1End>
+      <TP2>false</TP2>
+      <TP2Start>2025-11-10T08:30:00</TP2Start>
+      <TP2End>2025-11-10T10:30:00</TP2End>
+      <TP3>false</TP3>
+      <TP3Start>2025-11-10T12:00:00</TP3Start>
+      <TP3End>2025-11-10T14:30:00</TP3End>
+      <TP4>false</TP4>
+      <TP4Start>2025-11-10T18:00:00</TP4Start>
+      <TP4End>2025-11-10T22:00:00</TP4End>
+      <donchianWidth>22</donchianWidth>
+      <avoidSlippage>true</avoidSlippage>
+      <useADX>false</useADX>
+      <useVIX>false</useVIX>
+      <useSMA>false</useSMA>
+      <smaPeriod>787</smaPeriod>
+      <useKijun>false</useKijun>
+      <useSMA5minute>false</useSMA5minute>
+      <sma5Period>89</sma5Period>
+      <useKijun100T>false</useKijun100T>
+      <inactivityBars>0</inactivityBars>
+      <maxLossPerTrade>285</maxLossPerTrade>
+      <dailyGoal>0</dailyGoal>
+      <getMeOut>3</getMeOut>
+      <maxPosSize>40</maxPosSize>
+      <tradeFVG>true</tradeFVG>
+      <activateGracefulExit>false</activateGracefulExit>
+      <Percentage2>0</Percentage2>
+      <Percentage1>0</Percentage1>
+      <CutPositionToHalfP1>false</CutPositionToHalfP1>
+      <CutPositionToOneLotP1>false</CutPositionToOneLotP1>
+      <DollarExit>500</DollarExit>
+      <DollarExitAction>Flatten</DollarExitAction>
+      <ButtonMode>true</ButtonMode>
+      <EnablePanel1>true</EnablePanel1>
+      <EnablePanel5>false</EnablePanel5>
+      <EnablePanel6>true</EnablePanel6>
+      <EnablePanel8>false</EnablePanel8>
+      <EnablePanel7>false</EnablePanel7>
+      <EnablePanel8M1>false</EnablePanel8M1>
+      <EnablePanel9>true</EnablePanel9>
+      <UseDonchianForSMAComparisons>true</UseDonchianForSMAComparisons>
+      <LossTimeoutSeconds>0</LossTimeoutSeconds>
+      <Panel9_DistanceLength>21</Panel9_DistanceLength>
+      <Panel9_DistanceMultiplier>2</Panel9_DistanceMultiplier>
+      <Panel9_VolatilityVariable>84</Panel9_VolatilityVariable>
+      <Panel9_AutoVolatility>true</Panel9_AutoVolatility>
+    </orderblockfvg74012P>
+  </Strategy>
+</StrategyTemplate>
